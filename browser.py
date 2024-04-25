@@ -6,6 +6,7 @@ def open_url():
     url = entry.get().strip()
     if url:
         try:
+            #messagebox.askyesno('Anomoly', "Should I open the URL?")
             webbrowser.open_new(url)
         except Exception as e:
             messagebox.showerror("Error", f"Failed to open URL: {e}")
